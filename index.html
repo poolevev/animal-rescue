@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animal Rescue</title>
+    <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="./CSS/reset.css">
+    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="stylesheet" href="./CSS/tablestyle.css">
+    <script src="./images/data.js"></script>
+    <script src="./scripts/model/userManager.js"></script>
+    <script src="./scripts/model/animalManager.js"></script>
+    <script src="./scripts/model/adoptedManager.js"></script>
+    <script src="./scripts/model/donationManager.js"></script>
+
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img width="60" src="./images/logo.png" alt="logo-image" class="logo-image">
+        </div>
+
+        <nav class="menu">
+            <ul class="menuList">
+                <li class="menuItem"><a href="#mainPage">HOME</a> </li>
+                <li class="menuItem"><a href="#adoptedPage">ADOPTED</a> </li>
+                <li class="menuItem"><a href="#login">LOGIN</a> </li>
+                <li class="menuItem"><a href="#register">REGISTER</a> </li>
+            </ul>
+        </nav>
+
+
+    </header>
+    <main>
+        <div class="page" id="mainPage">
+            <input class="search" type="text" id="searchInput" placeholder="Search by name">
+
+            <select class="search" name="" id="searchByType">
+                <option value="" selected>Filter by type</option>
+            </select>
+
+            <div class="container">
+
+            </div>
+
+        </div>
+
+        <div class="page" id="adoptedPage">
+            <div class="container">
+
+            </div>
+
+        </div>
+        <div class="page" id="login">
+            <div class="container">
+                <form class="forms" id="loginForm">
+                    <input name="username" type="text" placeholder="username">
+                    <input name="pass" type="password" placeholder="pass">
+                    <input class="btn" type="submit" value="LOGIN" disabled>
+                </form>
+                <span id="notifText"></span>
+
+            </div>
+
+        </div>
+        <div class="page" id="register">
+            <div class="container">
+                <form class="forms" id="registerForm">
+                    <input name="username" type="text" placeholder="username">
+                    <input name="pass" type="password" placeholder="pass">
+                    <input type="password" placeholder="confirm pass">
+                    <input class="btn" id="registerBtn" type="submit" value="REGISTER" disabled>
+                </form>
+                <span id="notification"></span>
+
+            </div>
+
+        </div>
+
+        <div class="page" id="donatePage">
+
+            <div class="container">
+                <h2 id="howMuch"></h2>
+                <form class="forms" id="donationForm">
+                    <input type="text" name="name" id="donatingUser" placeholder="Your name" required>
+                    <input type="number" name="sum" id="sum" placeholder="Sum" required>
+                    <input type="submit" class="btn" id="donationBtn" value="DONATE" disabled>
+                </form>
+
+                <table id="donationHystory">
+                    <thead>
+                        <tr>
+                            <th>Date</th>
+                            <th>Animal Name</th>
+                            <th>Donated Sum</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tableBody">
+
+                    </tbody>
+                </table>
+
+            </div>
+
+        </div>
+
+
+    </main>
+    <footer>
+        <span>Web site created by Evgheni Pulev</span>
+        <br>
+        <span> All rights reseved &copy</span>
+
+    </footer>
+    <script src="./scripts/viewController.js"></script>
+</body>
+
+</html>

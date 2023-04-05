@@ -1,0 +1,141 @@
+header {
+    height: 13vh;
+    display: flex;
+    align-items: center;
+    background-color: rgb(111, 76, 83);
+    justify-content: space-between;
+    padding: 0 40px;
+}
+
+
+header {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.menuList {
+    margin-left: 150px;
+}
+
+.menuItem {
+    display: inline-block;
+    margin-left: 80px;
+    padding: 0 10px;
+    font-size: 20px;
+    text-transform: uppercase;
+    border: 1px solid black;
+    border-radius: 15px;
+    gap: 10px;
+}
+
+.menuItem:hover {
+    transition: .5s;
+    background-color: antiquewhite;
+}
+
+
+footer {
+    height: 12vh;
+    background-color: rgb(8, 78, 98);
+    padding: 20px 0 0;
+    text-align: center;
+    font-size: 18px;
+
+}
+
+.page {
+    min-height: 75vh;
+}
+
+#mainPage {
+
+    background-color: rgb(95, 102, 91);
+
+}
+
+.card {
+    background-color: rgb(82, 91, 56);
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px 0;
+}
+
+.btn {
+    display: inline-block;
+    background-color: rgb(202, 195, 195);
+    border-radius: 15px;
+    padding: 5px;
+}
+
+.btn:hover {
+    background-color: rgb(155, 148, 148);
+    transition: .4s;
+}
+
+.btn:active {
+    background-color: rgb(92, 86, 86);
+    transition: .3s;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+
+}
+
+#adoptedPage {
+
+    background-color: rgb(179, 206, 159);
+
+}
+
+
+#login {
+
+    background-color: rgb(144, 202, 100);
+
+}
+
+
+#register {
+
+    background-color: rgb(145, 212, 94);
+
+}
+
+
+#donatePage {
+    background-color: rgb(156, 170, 150);
+}
+
+#donatePage .container,
+#login .container,
+#register .container {
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+
+}
+
+
+.forms {
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+
+}
